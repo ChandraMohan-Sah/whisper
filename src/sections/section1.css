@@ -1,0 +1,42 @@
+/* ----------------- section 1 -------------------------------------------- */
+.section1 {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: column;
+
+	gap: 1.2vw;
+	width: 5%;
+	height: 100%;
+	background-color: #1C2C33;
+	border-top-left-radius: 8px;
+	border-bottom-left-radius: 8px;
+}
+
+
+  
+/* Medium screens: Tablets or small laptops */
+ 
+@media (min-width: 750px) and (max-width: 850px) {
+
+	.section1{
+		width:10%;
+	}
+
+}
+
+
+@media (max-width: 750px) {
+	.section1{
+		width:10%;
+	}
+}
+
+
+@media (max-width: 450px) {
+
+	.section1{
+		width:15%;
+	}
+}
+

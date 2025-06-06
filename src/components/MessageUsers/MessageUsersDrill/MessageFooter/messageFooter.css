@@ -1,0 +1,63 @@
+/* -------------------------------------------------- */
+
+.msg-footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #2A3942;
+	position: absolute; /* or fixed */
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 60px; /* or whatever height you prefer */
+	padding: 0 16px; /* optional spacing */
+  }
+
+
+  .msg-footer .msg-footer-detail{
+  flex:1;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+
+  gap: 10px;
+  padding: 10px 15px; 
+
+  width: 100%;
+  line-height: 3vw;
+  color: #BCC0C2;
+}
+
+.msg-footer i {
+	background: none;
+	border: none;
+	font-size: 20px;
+	cursor: pointer;
+	color: #BCC0C2;
+}
+
+.msg-footer .emoji{
+	display: none;
+}
+
+.msg-footer .chat-input {
+	flex: 1;
+	padding: 10px;
+	border-radius: 10px;
+	border: none;
+
+	font-size: 14px;
+	background-color: #444;
+	color: #BCC0C2;
+}
+
+.msg-footer .send-btn {
+	padding: 10px 15px;
+	border: none;
+	border-radius: 10px;
+	background-color: #222E35;
+	color: #BCC0C2;
+	cursor: pointer;
+	font-weight: bold;
+  }
+

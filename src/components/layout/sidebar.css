@@ -1,0 +1,138 @@
+
+ .top{
+	display: flex;
+	flex-direction: column;
+	margin-top:10px;
+	align-items: center;
+	gap: 1.6vw;
+}
+
+ .bottom {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1.6vw;
+}
+
+
+.sidebar span{
+	margin-top: 8px;
+	padding:2px;
+	border-radius: 8px;
+	cursor: pointer;
+}
+
+.sidebar i{
+	padding-top:10px;
+	font-size: 2vw;
+	color: #ABBAC1;
+	cursor:pointer;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for a card effect */
+}
+
+
+
+.sidebar img{
+	
+	width: 100%;
+	aspect-ratio: 1 / 1; /* ensures the height always equals the width. */
+	padding: 20%;
+	cursor: pointer;
+
+	border-radius: 50%;
+	object-fit: cover;
+	object-position: top;
+}
+
+.sidebar span.active,
+.sidebar button.active,
+.sidebar i.active {
+  padding:18px 5px 8px 5px;
+  background-color: #364248; /* Highlight background */
+  color: #fff;
+  border: 1px solid #aaa;
+
+  transform: scale(1.05);
+  transition: all 0.2s ease-in-out;
+}
+
+
+
+@media (min-width: 750px) and (max-width: 850px) {
+	 .top{
+		font-size: 1.4vw;
+	}
+
+	 .bottom{
+		font-size: 1.4vw;
+	}
+
+	.sidebar i{
+		font-size: 3.1vw;
+	}
+}
+
+
+
+@media (max-width: 750px) {
+
+	.section1{
+		width:10%;
+	}
+
+	.top{
+		font-size: 1.2vw;
+		gap: 1.6vw;
+	}
+
+	.bottom{
+		font-size: 1.2vw;
+	}
+
+	.sidebar i{
+		font-size: 4vw;
+	}
+
+	.sidebar img {
+		width: 8vw;               /* Similar scale to your icon (7vw) */
+		aspect-ratio: 1 / 1;      /* Keep it square */
+		border-radius: 50%;       /* Circular image */
+		object-fit: cover;
+		object-position: top;
+		cursor: pointer;
+	}
+
+}
+
+
+
+@media (max-width: 450px) {
+
+	.section1{
+		width:15%;
+	}
+
+	.sidebar .top{
+		font-size: 1.2vw;
+	}
+
+	.sidebar .bottom{
+		font-size: 1.2vw;
+	}
+
+	.sidebar i{
+		font-size: 7vw;
+	}
+
+	.sidebar img {
+		width: 15vw;               /* Similar scale to your icon (7vw) */
+		aspect-ratio: 1 / 1;      /* Keep it square */
+		border-radius: 50%;       /* Circular image */
+		object-fit: cover;
+		object-position: top;
+		cursor: pointer;
+	}
+
+}
+
+

@@ -1,0 +1,83 @@
+.chat-header{
+	/* position: sticky;
+	top: 0; */
+	background-color: #0E1B21;;	
+	z-index: 1000; /* Ensure it's on top of everything else */   
+}
+
+.chat-header .header{
+	display: flex;
+	gap:25vw;
+}
+
+.chat-header .header p  {
+	margin-top:20px;
+	margin-left:1vw;
+	font-size: 1.8vw;
+	color:#BCC0C2;
+}
+
+.chat-header .header i  {
+	margin-top:20px;
+	font-size: 2vw;
+	color:#BCC0C2;
+	cursor: pointer;
+}
+
+.chat-item {
+    padding: 10px;
+    margin:2px;
+    margin-top:10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+
+    background-color: #0E1B21;
+    color:white;
+    font-family: Arial, sans-serif; 
+}
+
+
+
+@media (min-width: 750px) and (max-width: 850px) {
+
+	.chat-header .header{
+		gap:15vw;
+	}
+
+	.chat-header .header p  {
+		font-size: 3.1vw;
+	}
+	
+	.chat-header .header i  {
+		font-size: 3.1vw;
+	}
+
+
+}
+
+
+@media (max-width: 750px) {
+
+	
+	.chat-header{
+		display: none;
+	}
+
+	.chat-header .header{
+		gap:20vw;
+	}
+
+	.chat-header .header p  {
+		font-size: 4vw;
+	}
+	
+	.chat-header .header i  {
+		font-size: 4vw;
+	}
+}
+
+
+
+

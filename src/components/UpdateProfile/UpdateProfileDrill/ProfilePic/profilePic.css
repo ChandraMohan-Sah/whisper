@@ -1,0 +1,42 @@
+.change-profile{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top:40px;
+	position: relative;
+	margin-top:40px;
+}
+
+
+.change-profile i{
+	position:absolute;
+	color: white;
+	top:5;
+	left:8;
+	padding:5px;
+	cursor: pointer;
+
+	font-size: 2vw;
+	font-weight: 400;
+	border: 1px solid white;
+	border-radius: 50%;
+}
+
+
+.change-profile .profile-pic{
+	width:14vw;
+	height: 14vw;
+	border: 1px solid white;
+	background-color: white;
+	border-radius: 50%;
+}
+
+.change-profile .profile-pic .img-profile-pic{
+
+	width:100%;
+	height: 100%;
+	border-radius: 50%;
+	object-fit: cover;
+	object-position: top;
+}
+

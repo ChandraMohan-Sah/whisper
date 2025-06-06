@@ -1,0 +1,45 @@
+.friend-detail-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:2vw;
+    width:100%;
+    padding-top: 5px;
+    height:33.5%;
+
+	overflow-y: auto;
+}
+
+
+.friend-detail-section .box{
+	height: 100px;
+	width: 100px;
+	background-color: grey;
+	border-radius: 10px;
+	margin-bottom:42px;
+	padding:3px;
+}
+
+
+.friend-detail-section  .friend-image{
+	height: 100px;
+	width: 100px;
+	border-radius: 10px;
+
+	object-fit: cover;
+}
+ 
+
+
+.friend-detail-section p{
+	height: 100px;
+	width: 100px;
+	border-radius: 10px;
+	text-align: center;
+	color:white;
+}
+
+
+
+

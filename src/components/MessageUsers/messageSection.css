@@ -1,0 +1,130 @@
+.msg-section {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	width: 100%;
+	height: 100%;
+
+
+	background-color: #222E35;
+	border-top-right-radius: 15px;
+	border-bottom-right-radius: 15px;
+
+}
+
+
+
+.msg-section .main-section {
+	width: 100%;
+	height: 100%;
+	opacity: 0.7;
+	border-top: 1px solid rgba(255, 255, 255, 0.3);
+
+}
+
+
+/* -------------------------------------------------- */
+
+.msg-section .cover-profile-section {
+	position: relative;
+	width: 100%;
+	height: 100%;
+
+	background-image: linear-gradient(to bottom right, #524F60, #222E35);
+	background-size: cover;
+	background-position: top;
+
+}
+
+
+
+
+@media (min-width: 750px) and (max-width: 850px) {
+
+	.msg-section {
+		width: 100%;
+
+	}
+
+	.msg-section .main-section {
+		width: 100%;
+	}
+
+	.msg-section .msg-header img {
+		width: 46px;
+		height: 46px;
+
+	}
+
+	.msg-section .send-btn {
+		padding: 8px 12px;
+	}
+
+	.msg-section .avatar-receiver {
+		display: none;
+	}
+
+	.msg-section .avatar-sender {
+		display: none;
+	}
+
+	.msg-section .chat-input {
+		margin-left: 5px;
+	}
+}
+
+
+@media (max-width: 750px) {
+
+	.msg-section {
+		width: 100%;
+		padding: 0px;
+	}
+
+	.msg-section .main-section {
+		width: 100%;
+	}
+
+	.msg-section .msg-header img {
+		width: 40px;
+		height: 40px;
+
+	}
+
+	.msg-section .avatar-receiver {
+		display: none;
+	}
+
+	.msg-section .avatar-sender {
+		display: none;
+	}
+
+	.msg-section .main-section {
+		width: 100%;
+
+	}
+
+}
+
+
+/* For WebKit browsers */
+.section3 .msg-section::-webkit-scrollbar {
+	width: 6px;
+	/* make scrollbar thinner */
+}
+
+.section3 .msg-section::-webkit-scrollbar-track {
+	background: #2b2f3a;
+	/* dark background for the track */
+}
+
+.section3 .msg-section::-webkit-scrollbar-thumb {
+	background-color: #888;
+	/* scrollbar thumb color */
+	border-radius: 10px;
+}
+
+.section3 .msg-section::-webkit-scrollbar-thumb:hover {
+	background-color: #555;
+}

@@ -1,0 +1,33 @@
+.chat-header .searchBar{
+	display:flex;
+}
+
+.chat-header .searchBar input {
+	margin: 0 auto;
+	display: block;
+
+	margin-top: 12px;
+	width: 96%;
+
+	padding:0.7vw;
+	border:none;
+	border-radius: 3px;
+	
+	background-color:#202C33 ;
+	color:white;
+}
+
+.chat-header .filter{
+	margin-top: 10px;
+	padding-left:10px;
+	padding-right:1.8vw;
+}
+
+.chat-header .filter button{
+	padding:0.6vw;
+	border: none;
+	border-radius: 20px;
+	background-color : #202C33;
+	color:#757369;
+	cursor: pointer;
+}

@@ -1,0 +1,46 @@
+.profile-friend-header{
+    margin-top: 15px;
+    display: flex;
+	align-items: start;
+	flex-direction: row;
+	justify-content: space-between;
+	line-height: 1px;
+
+	width:100%;
+	color:white;
+}
+
+
+
+.profile-friend-header .user-friend{
+	display: flex;
+	align-items: start;
+	flex-direction: column;
+	line-height: 12px;
+	margin-left:6px;
+	cursor: pointer;
+}
+
+
+
+.profile-friend-header .user-friend .friend-info{
+	display: flex;
+	justify-content: start;
+	gap:8px;
+}
+
+
+
+.profile-friend-header  .events{
+	display: flex;
+	align-items: start;
+	margin-top:14px;
+	padding:13px;
+    gap:9px;
+
+
+	cursor: pointer;
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	border-radius: 5px;
+	
+}

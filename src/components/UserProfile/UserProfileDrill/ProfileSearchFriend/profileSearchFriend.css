@@ -1,0 +1,30 @@
+.search-friend{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:2vw;
+    width:100%;
+    height:12%;
+
+    padding:2px;
+	overflow-y: auto;
+}
+
+.search-friend input {
+	margin: 0 auto;
+	display: block;
+
+	width: 100%;
+	padding:0.7vw;
+    
+	border:none;
+	border-radius: 3px;
+	
+	background-color:#202C33 ;
+	color:white;
+	margin-bottom: 13px;
+}
+
+
+

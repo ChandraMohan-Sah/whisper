@@ -1,0 +1,104 @@
+.msg-container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding: 20px;
+    height: calc(100% - 67px);
+    overflow-y: auto;
+    font-family: sans-serif;
+}
+
+.msg-container .msg {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 50px;
+    max-width: 70%;
+}
+
+.msg-container .msg.receiver {
+    flex-direction: row;
+}
+
+.msg-container .msg.sender {
+    flex-direction: row-reverse;
+    margin-left: auto;
+}
+
+.msg-container .avatar-receiver {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 10px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.msg-container .avatar-sender {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-left: 10px;
+    object-fit: cover;
+    object-position: top;
+}
+
+/* Bubble Styles */
+.msg-container .bubble {
+    background-color: #444;         /* Default background fallback */
+    padding: 10px 15px;
+    border-radius: 15px;
+    position: relative;
+    max-width: 100%;
+    color: #ffffff;                 /* White text */
+    font-size: 17px;
+}
+
+.msg-container .receiver .bubble {
+    background-color: #485563;      /* Green for receiver */
+    border-bottom-left-radius: 0;
+}
+
+.msg-container .receiver .bubble::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: -10px;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-right: 10px solid #485563;
+    border-bottom: 10px solid transparent;
+}
+
+.msg-container .sender .bubble {
+    background-color: #00796B;      /* Blue for sender */
+    color: #ffffff;
+    border-bottom-right-radius: 0;
+}
+
+.msg-container .sender .bubble::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: -10px;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-left: 10px solid #00796B;
+    border-bottom: 10px solid transparent;
+}
+
+.msg-container .time {
+    display: block;
+    font-size: 11px;
+    margin-top: 2px;
+    text-align: right;
+    opacity: 0.6;
+    color: #e0e0e0;
+}
+
+@media (max-width: 750px) {
+    .msg-container .bubble {
+        font-size: 14px;
+    }
+}

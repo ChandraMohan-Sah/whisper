@@ -1,0 +1,50 @@
+.section2 {
+  display: flex;
+  flex-direction: column;
+
+  width: 30%;
+  height: 100%;
+  background-color: #0E1B21;
+  overflow-y: auto;
+}
+
+
+
+/* For WebKit browsers */
+.section2::-webkit-scrollbar {
+  width: 6px;
+  /* make scrollbar thinner */
+}
+
+.section2::-webkit-scrollbar-track {
+  background: #2b2f3a;
+  /* dark background for the track */
+}
+
+.section2::-webkit-scrollbar-thumb {
+  background-color: #888;
+  /* scrollbar thumb color */
+  border-radius: 10px;
+}
+
+.section2::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+
+/* Media queries */
+@media (min-width: 750px) and (max-width: 850px) {
+
+  .section2 {
+    width: 38%;
+  }
+
+}
+
+@media (max-width: 750px) {
+
+  .section2 {
+    display: none;
+  }
+
+}

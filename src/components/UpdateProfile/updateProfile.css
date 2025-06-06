@@ -1,0 +1,71 @@
+.update-profile .fix-top{
+
+	background-color: #0E1B21;;	
+}
+
+.update-profile .header{
+	display: flex;
+	gap:25vw;
+}
+
+.update-profile .header p  {
+	margin-top:20px;
+	margin-left:1vw;
+	font-size: 1.8vw;
+	color:white;
+}
+
+.update-profile .header i  {
+	margin-top:20px;
+	font-size: 2vw;
+	color:white;
+	cursor: pointer;
+}
+
+
+@media (min-width: 750px) and (max-width: 850px) {
+
+
+	.update-profile .header{
+		gap:15vw;
+	}
+
+	.update-profile .header p  {
+		font-size: 3.1vw;
+	}
+	
+	.update-profile .header i  {
+		font-size: 3.1vw;
+	}
+
+	.update-profile .profile-pic{
+
+		width:20vw;
+		height:20vw;
+	}
+	
+}
+
+
+@media (max-width: 750px) {
+
+	
+	.update-profile{
+		display: none;
+	}
+
+	.update-profile .header{
+		gap:20vw;
+	}
+
+	.update-profile .header p  {
+		font-size: 4vw;
+	}
+	
+	.update-profile .header i  {
+		font-size: 4vw;
+	}
+}
+
+
+

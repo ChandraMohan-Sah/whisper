@@ -1,0 +1,92 @@
+.chat-list{
+    display: flex;
+    padding-top: 2.2px;
+    padding-bottom: 2.2px;
+    border-bottom: 1px solid #1f1f1f;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.chat-list.active {
+    background-color: #2A3942;
+    border-radius: 8px;;
+}
+
+
+.chat-list .chat-profile{
+	flex-shrink: 0;
+	margin-right: 10px;
+}
+
+
+.chat-list  .chat-profile img {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	object-fit: cover;
+}
+
+.chat-list .chat-content{
+    flex:1;
+    display: flex;
+    justify-content: center;
+    margin-left:2vw;
+    flex-direction: column;
+
+}
+
+.chat-list .chat-content .chat-header-item {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 400;
+    font-size: 16px;
+    /* Remove any position or z-index */
+}
+
+.chat-list .chat-content .chat-header-item .chat-name{
+	color:#BCC0C2;
+}
+
+.chat-list .chat-content .chat-header-item .chat-header-end{
+	display: flex;
+	justify-content: center;
+	gap:15px;
+
+}
+
+.chat-list .chat-content .chat-header-item .chat-header-end i{
+	font-size: 14px;
+}
+
+
+.chat-list .chat-content .chat-message{
+    display: flex;
+    align-items:center;
+    font-size: 14px;
+	color: #ccc;
+	margin-top: 4px;
+
+}
+
+
+.chat-list .chat-content .chat-message .chat-ticks-seen{
+	color:green
+
+}
+
+
+.chat-list .chat-content .chat-message .chat-ticks-unseen{
+
+	color: grey;
+}
+
+
+.chat-list .chat-content .chat-message .chat-text{
+    font-weight: 400;
+	color: grey;
+}
+
+
+
+
+
